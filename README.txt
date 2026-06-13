@@ -1,17 +1,20 @@
-﻿ENTH Latency TESTER Native
-Version: 0.4.16 native preview
+﻿ENTH Latency TESTER
+Version: 0.4.17 preview
 Copyright C F.M. Mariani - ENTHCREATIONS.COM
 
-This is the first native Windows EXE preview.
+This is a Windows EXE preview.
 It does not launch PowerShell and integrates Raw Input sampling plus USB descriptor scanning in the executable.
 Keep the logo PNG next to the EXE for the ENTH sidebar branding.
 Some PCs may still require Run as administrator for complete USB hub descriptor access.
 
+0.4.17
+- Removes the unnecessary product-name specification from the executable and public documentation.
+
 0.4.16
-- Rounds the ENTH logo corners in the native sidebar.
+- Rounds the ENTH logo corners in the sidebar.
 
 0.4.15
-- Restyles the native interface to match the current ENTH Signal Tester visual system.
+- Restyles the interface to match the current ENTH Signal Tester visual system.
 - Adds rounded telemetry panels, holographic dark surfaces, cyan/magenta accents, and clearer metric hierarchy.
 - Leaves Raw Input sampling, USB descriptor scanning, calibration, calculations, and CSV export unchanged.
 

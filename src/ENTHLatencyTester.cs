@@ -13,12 +13,12 @@ using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32.SafeHandles;
 
-[assembly: AssemblyTitle("ENTH Latency TESTER")]
-[assembly: AssemblyProduct("ENTH Latency TESTER")]
+[assembly: AssemblyTitle("ENTH Latency Tester")]
+[assembly: AssemblyProduct("ENTH Latency Tester")]
 [assembly: AssemblyCompany("ENTHCREATIONS.COM")]
 [assembly: AssemblyCopyright("Copyright C F.M. Mariani - ENTHCREATIONS.COM")]
-[assembly: AssemblyVersion("0.4.16.0")]
-[assembly: AssemblyFileVersion("0.4.16.0")]
+[assembly: AssemblyVersion("0.4.17.0")]
+[assembly: AssemblyFileVersion("0.4.17.0")]
 
 
 public static class RawInputNative {
@@ -989,8 +989,8 @@ internal sealed class MetricBox : ThemedPanel {
 }
 
 internal sealed class MainForm : RawInputForm {
-    const string AppName = "ENTH Latency TESTER";
-    const string AppVersion = "0.4.16 native preview";
+    const string AppName = "ENTH Latency Tester";
+    const string AppVersion = "0.4.17 preview";
     const string Copyright = "Copyright C F.M. Mariani - ENTHCREATIONS.COM";
 
     readonly HidReportSampler sampler = new HidReportSampler();
@@ -1045,7 +1045,7 @@ internal sealed class MainForm : RawInputForm {
         ApplyRoundedRegion(logo, 10);
         logo.Resize += (s,e) => ApplyRoundedRegion(logo, 10);
         string logoPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ENTH LOGO 2025 WHITE.png"); if(File.Exists(logoPath)) logo.Image = Image.FromFile(logoPath);
-        Label brandSub = NewLabel("USB/HID TELEMETRY / v0.4.16", 12, 96, 190, 18, 7, false); brandSub.Font = new Font("Consolas", 7); brandSub.ForeColor = cyan;
+        Label brandSub = NewLabel("USB/HID TELEMETRY / v0.4.17", 12, 96, 190, 18, 7, false); brandSub.Font = new Font("Consolas", 7); brandSub.ForeColor = cyan;
         Label sideTitle = NewLabel("CONTROLLER", 12, 140, 110, 18, 8, false); sideTitle.Font = new Font("Consolas", 8); sideTitle.ForeColor = muted;
         sideController = NewLabel("DEVICE TYPE: waiting for input\r\nUSB ID: --\r\nUSB POLLING: --\r\nFIRMWARE/PROFILE: --", 12, 164, 210, 126, 8, true); sideController.Font = new Font("Consolas", 8, FontStyle.Bold); sideController.BorderStyle = BorderStyle.FixedSingle; sideController.BackColor = Color.FromArgb(20, 13, 34);
         Label sideHint = NewLabel("Move the controller to lock VID/PID and read bInterval from the USB descriptor.", 12, 306, 210, 72, 8, false); sideHint.Font = new Font("Consolas", 8); sideHint.ForeColor = muted;
@@ -1053,7 +1053,7 @@ internal sealed class MainForm : RawInputForm {
         Label methodTitle = NewLabel("READ DEPTH", 10, 10, 170, 18, 8, true); methodTitle.Font = new Font("Consolas", 8, FontStyle.Bold); methodTitle.ForeColor = cyan;
         Label methodText = NewLabel("The controller declares polling in bInterval: the lowest communication layer Windows can read on the interrupt endpoint talking to USB bus.\r\n\r\nInputs are captured above that: Windows receives HID reports and delivers them through Raw Input.", 10, 34, 188, 210, 7, false); methodText.Font = new Font("Consolas", 7); methodText.ForeColor = muted;
         method.Controls.AddRange(new Control[]{methodTitle, methodText});
-        Label foot = NewLabel("v0.4.16 / native preview\r\n" + Copyright, 12, 852, 210, 48, 7, false); foot.Font = new Font("Consolas", 8); foot.ForeColor = muted;
+        Label foot = NewLabel("v0.4.17 / preview\r\n" + Copyright, 12, 852, 210, 48, 7, false); foot.Font = new Font("Consolas", 8); foot.ForeColor = muted;
         sidebar.Controls.AddRange(new Control[]{brandTop, logo, brandSub, sideTitle, sideController, sideHint, method, foot});
 
         ThemedPanel setup = NewPanel(260,128,944,132,true); setup.Anchor = AnchorStyles.Left|AnchorStyles.Top|AnchorStyles.Right;
