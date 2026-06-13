@@ -1,0 +1,8 @@
+*.preview.exe
+latency-tester-preview.png
+usb-polling-descriptors.csv
+*.user
+*.suo
+.vs/
+bin/
+obj/
