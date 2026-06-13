@@ -1,11 +1,16 @@
 ﻿ENTH Latency TESTER
-Version: 0.4.17 preview
+Version: 0.4.18 preview
 Copyright C F.M. Mariani - ENTHCREATIONS.COM
 
 This is a Windows EXE preview.
 It does not launch PowerShell and integrates Raw Input sampling plus USB descriptor scanning in the executable.
 Keep the logo PNG next to the EXE for the ENTH sidebar branding.
 Some PCs may still require Run as administrator for complete USB hub descriptor access.
+
+0.4.18
+- Licenses the project under GNU GPLv3 only.
+- Requires modified interactive versions to keep the ENTH copyright notice clearly visible.
+- Adds the license and no-warranty notice to the interface.
 
 0.4.17
 - Removes the unnecessary product-name specification from the executable and public documentation.

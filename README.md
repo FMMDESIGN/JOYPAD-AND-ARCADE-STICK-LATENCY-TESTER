@@ -35,7 +35,19 @@ The application is implemented as a standalone C# Windows Forms source file:
 src/ENTHLatencyTester.cs
 ```
 
-Current release: **0.4.17 preview**
+Current release: **0.4.18 preview**
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 only**, with an additional attribution requirement permitted by GPLv3 section 7(b).
+
+You may use, study, modify, and redistribute the tester under those terms. Modified or redistributed versions with an interactive interface must keep the following notice clearly visible:
+
+```text
+Copyright C F.M. Mariani - ENTHCREATIONS.COM
+```
+
+See [LICENSE](LICENSE) and [ADDITIONAL-TERMS.md](ADDITIONAL-TERMS.md) for the complete terms.
 
 ## Copyright
 
