@@ -9,7 +9,7 @@ Some PCs may still require Run as administrator for complete USB hub descriptor 
 
 0.4.18
 - Licenses the project under GNU GPLv3 only.
-- Requires modified interactive versions to keep the ENTH copyright notice clearly visible.
+- Politely asks reused or modified versions to keep the ENTH credit visible.
 - Adds the license and no-warranty notice to the interface.
 
 0.4.17

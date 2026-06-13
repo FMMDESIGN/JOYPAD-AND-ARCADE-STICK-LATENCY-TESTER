@@ -2,7 +2,7 @@
 // ENTH Latency Tester
 // Copyright C F.M. Mariani - ENTHCREATIONS.COM
 // SPDX-License-Identifier: GPL-3.0-only
-// Additional attribution terms are defined in ADDITIONAL-TERMS.md.
+// Optional attribution guidance is available in ATTRIBUTION.md.
 
 using System.Collections.Generic;
 using System.Diagnostics;

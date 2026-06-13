@@ -39,15 +39,15 @@ Current release: **0.4.18 preview**
 
 ## License
 
-This project is licensed under the **GNU General Public License v3.0 only**, with an additional attribution requirement permitted by GPLv3 section 7(b).
+This project is licensed under the **GNU General Public License v3.0 only**.
 
-You may use, study, modify, and redistribute the tester under those terms. Modified or redistributed versions with an interactive interface must keep the following notice clearly visible:
+You may use, study, modify, and redistribute the tester under those terms. If you reuse the application, keeping the following credit visible would be greatly appreciated, but it is not mandatory:
 
 ```text
 Copyright C F.M. Mariani - ENTHCREATIONS.COM
 ```
 
-See [LICENSE](LICENSE) and [ADDITIONAL-TERMS.md](ADDITIONAL-TERMS.md) for the complete terms.
+See [LICENSE](LICENSE) for the license and [ATTRIBUTION.md](ATTRIBUTION.md) for the optional attribution request.
 
 ## Copyright
 
