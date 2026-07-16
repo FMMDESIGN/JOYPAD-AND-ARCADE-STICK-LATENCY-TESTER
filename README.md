@@ -37,6 +37,41 @@ src/ENTHLatencyTester.cs
 
 Current release: **0.4.18 preview**
 
+On Windows, create a clean build in `dist` with:
+
+```powershell
+.\scripts\build.ps1
+```
+
+### Signed Windows releases
+
+The executable must be Authenticode-signed for reliable use with Windows 11 Smart App Control. Use an RSA code-signing certificate issued by a provider trusted by Microsoft; a self-signed certificate is not sufficient for public distribution.
+
+Sign from a PFX file (prefer passing the password through a protected CI secret rather than command history):
+
+```powershell
+.\scripts\build.ps1 `
+  -CertificatePath C:\secure\enth-code-signing.pfx `
+  -CertificatePassword $env:ENTH_CERTIFICATE_PASSWORD `
+  -TimestampUrl https://your-ca.example/rfc3161
+```
+
+Or sign with a certificate already installed in the current user's certificate store:
+
+```powershell
+.\scripts\build.ps1 `
+  -CertificateThumbprint $env:ENTH_CERTIFICATE_THUMBPRINT `
+  -TimestampUrl https://your-ca.example/rfc3161
+```
+
+The script uses SHA-256 for the file digest and RFC 3161 timestamp, then verifies the signature with the Windows Authenticode policy. Never commit a PFX file or its password to this repository.
+
+Microsoft references: [Smart App Control overview](https://learn.microsoft.com/windows/apps/develop/smart-app-control/overview), [code signing for Smart App Control](https://learn.microsoft.com/windows/apps/develop/smart-app-control/code-signing-for-smart-app-control), and [SignTool](https://learn.microsoft.com/windows/win32/seccrypto/signtool).
+
+### Support reply
+
+> Thanks for reporting this. The current preview executable is unsigned, so Windows 11 Smart App Control may block it and does not offer per-app exceptions. We are preparing future Windows releases with a trusted Authenticode signature. Please do not disable Smart App Control just to run the tester. We will publish an updated signed build when it is available.
+
 ## License
 
 This project is licensed under the **GNU General Public License v3.0 only**.

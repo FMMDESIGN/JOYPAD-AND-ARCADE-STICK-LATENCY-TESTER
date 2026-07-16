@@ -6,3 +6,6 @@ usb-polling-descriptors.csv
 .vs/
 bin/
 obj/
+dist/
+*.pfx
+*.p12
